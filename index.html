@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Number Guessing Game</h1>
+    <p>You have 7 chances to guess the number between 0 and 99. Let's start the game!</p>
+    <input type="number" id="guess" placeholder="Enter your guess" onkeydown="if(event.key === 'Enter') checkGuess()">
+    <button onclick="checkGuess()">Guess</button>
+    <p id="chancesLeft">Chances left: 7</p>
+    <p id="result"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
